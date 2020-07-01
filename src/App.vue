@@ -1,12 +1,14 @@
 <template>
   <div id="app">
-    <div id="header">
+    <header class="header">
       <router-link to="/home">Home</router-link>
       <router-link to="/about">About</router-link>
       <router-link to="/works">Works</router-link>
       <router-link to="/contact">Contact</router-link>
+    </header>
+    <div class="container py-5">
+      <router-view/>
     </div>
-    <router-view/>
   </div>
 </template>
 
@@ -28,7 +30,7 @@ body {
   color: #2c3e50;
 }
 
-#header {
+.header {
   height: 40px;
   background: #fff;
   box-shadow: 0 3px 3px rgba(0,0,0,.1);
@@ -36,7 +38,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-#header a {
+.header a {
   text-decoration: none;
   color: #2c3e50;
   margin: 0 10px;

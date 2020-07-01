@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2>Contact</h2>
+        <h1>Contact</h1>
         <p>ここはお問い合わせページです。</p>
         <h2>Skills</h2>
         <p></p>
