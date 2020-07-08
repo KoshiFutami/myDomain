@@ -1,37 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Modak&display=swap");
+@import "colors";
+@import "_media_queries";
+
+body {
+  margin: 0;
+}
+a:hover {
+  text-decoration: none;
+}
+#app {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.header {
+  height: 60px;
+  width: 100%;
+  padding: 0 10px;
+  background: $color-main;
+  box-shadow: 0 3px 3px $color-shadow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-transform: uppercase;
+}
+.header__logo {
+  color: $color-white;
+  font-size: 2.2rem;
+  line-height: 1;
+  font-family: "Modak", cursive;
+  &:hover {
+    color: $color-white;
+    opacity: 0.8;
+  }
+}
+.header__nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  @include tab {
+    display: none;
+  }
+  &__item {
+    display: block;
+    height: 100%;
+    color: $color-white;
+    line-height: 60px;
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 0 15px;
+    &:hover {
+      background: $color-white;
+      color: $color-main;
+    }
+  }
+}
+
+.main {
+  margin-top: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .page {
-    &__title {
-        font-size: 2.5rem;
-        line-height: 1.4;
-        margin-bottom: 20px;
-    }
-    &__desc {
-        font-size: .95rem;
-        line-height: 1.8;
-    }
-    &__img {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        float: left;
-    }
+  &__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 2px solid $color-border;
+    margin-right: 30px;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    color: $color-text;
+  }
+  &__desc {
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
 }
 .section {
-    border: 2px solid #999;
-    border-radius: 5px;
-    box-shadow: 1px 3px 3px rgba(0,0,0,.1);
-    padding: 20px;
-    margin-bottom: 40px;
-    &:first-of-type {
-        margin-top: 40px;
-    }
-    &__title {
-        font-size: 2rem;
-        line-height: 1.4;
-        margin-bottom: 20px;
-    }
-    &__content {
-        font-size: 1rem;
-        line-height: 1.8;
-        margin-bottom: 0;
-    }
+  border: 2px solid $color-border;
+  border-radius: 5px;
+  box-shadow: 1px 3px 3px $color-shadow;
+  padding: 20px;
+  margin-bottom: 40px;
+  &:first-of-type {
+    margin-top: 40px;
+  }
+  &__title {
+    font-size: 2rem;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+  &__content {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 0;
+  }
 }

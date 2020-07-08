@@ -1,11 +1,15 @@
 <template>
     <div>
-        <img class="page__img" src="/profile-img.jpg">
-        <h1 class="page__title">About</h1>
-        <p class="page__desc">
-            こちらのページでは、私の自己紹介をご覧いただきます。<br>
-            経歴やスキルだけでなく、好きなものまでご紹介していきます。
-        </p>
+        <div class="page__top">
+            <img class="page__img" src="../assets/profile-img.jpg">
+            <div class="page__text">
+                <h1 class="page__title">About</h1>
+                <p class="page__desc">
+                    こちらのページでは、私の自己紹介をご覧いただきます。<br>
+                    経歴やスキルだけでなく、好きなものまでご紹介していきます。
+                </p>
+            </div>
+        </div>
         <section class="section">
             <h2 class="section__title">Profile</h2>
             <p class="section__content">
