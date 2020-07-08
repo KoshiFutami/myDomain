@@ -1,5 +1,6 @@
 <template>
     <div>
+        <img class="page__img" src="/profile-img.jpg">
         <h1 class="page__title">About</h1>
         <p class="page__desc">
             こちらのページでは、私の自己紹介をご覧いただきます。<br>

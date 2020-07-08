@@ -8,8 +8,18 @@
         font-size: .95rem;
         line-height: 1.8;
     }
+    &__img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        float: left;
+    }
 }
 .section {
+    border: 2px solid #999;
+    border-radius: 5px;
+    box-shadow: 1px 3px 3px rgba(0,0,0,.1);
+    padding: 20px;
     margin-bottom: 40px;
     &:first-of-type {
         margin-top: 40px;
@@ -22,5 +32,6 @@
     &__content {
         font-size: 1rem;
         line-height: 1.8;
+        margin-bottom: 0;
     }
 }
